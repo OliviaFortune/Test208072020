@@ -1,0 +1,47 @@
+  <body>
+  <div>
+  <p>Question 1 : Who was the first man on the Moon</p>
+      <button id="btn1">Neil Armstrong</button>
+      <button id="btn2">Buzz Aldrin</button>
+      <button id="btn3">Jim Lovell</button>
+    </div>
+ <div id="container">Click a button!</div>
+
+  </body>
+<script>    var btn1 = document.getElementById("btn1"),
+      btn2 = document.getElementById("btn2"),
+      btn3 = document.getElementById("btn3"),
+      container = document.getElementById("container");
+    var content1 = "You said Neil Armstrong"+" That is correct",
+      content2 = "You Said Buzz Aldrin"+" No the Second Guy",
+      content3 = "You said Jim Lovell"+" No the Appollo 13 guy";
+  btn1.addEventListener("click", () => container.innerHTML = content1);
+    btn2.addEventListener("click", () => container.innerHTML = content2);
+    btn3.addEventListener("click", () => container.innerHTML = content3);
+</script>
+<p>Question 2 : What Year did he land on the Moon</p>
+  <head>
+    <title>Tabbed Display</title>
+  </head>
+  <body>
+  <div>
+      <button id="btn4">1968</button>
+      <button id="btn5">1969</button>
+      <button id="btn6">1971</button>
+    </div>
+ <div id="container1">Click a button!</div>
+
+  </body>
+<script>    var btn4 = document.getElementById("btn4"),
+      btn5 = document.getElementById("btn5"),
+      btn6 = document.getElementById("btn6"),
+      container = document.getElementById("container");
+    var content4 = "You said 1968"+" No",
+      content5 = "You Said 1969"+" Yes",
+      content6 = "You said 1971"+" No";
+  btn4.addEventListener("click", () => container1.innerHTML = content4);
+    btn5.addEventListener("click", () => container1.innerHTML = content5);
+    btn6.addEventListener("click", () => container1.innerHTML = content6);
+</script>
+
+

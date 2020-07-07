@@ -1,0 +1,36 @@
+
+<script>
+var questions = [
+  ['How many states are in the United States?', '50'],
+  ['How many legs does a spider have?', '8']
+];
+
+function quiz(quizQuestions) {
+  var counter = 0;
+
+  for (var i = 0; i < questions.length; i++) {
+    var answer = prompt(questions[i][0]);
+
+    if (answer === questions[i][1]) {
+      var correctAnswers = [questions[i][0]];
+      counter += 1;
+    } else {
+      var wrongAnswers = [questions[i][0]];
+    }
+  }
+
+  print('<h2>You got these questions right</h2>');
+  print(correctAnswers);
+  print('<h2>You got these questions wrong</h2>');
+  print(wrongAnswers);
+
+  var printQuestionsRight = '<h3>You got ' + counter + ' questions right</h3>';
+  print(printQuestionsRight);
+}
+
+function print(message) {
+  document.write(message);
+}
+
+quiz(questions);
+</script>

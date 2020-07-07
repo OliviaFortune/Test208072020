@@ -1,0 +1,26 @@
+<SCRIPT LANGUAGE="JavaScript">
+var questions = [
+["What is the capital of England?", "LONDON", "You know, where the queen lives"],
+["What is the capital of France?", "PARIS", "Remember the eiffel tower?"],
+["What is the capital of Canada?", "OTTAWA", "Lot of mooses there"],
+["What is the capital of Ireland?", "DUBLIN", "It's not Cork"]
+
+];
+
+
+var correctAnswers = 0;
+
+for (var i = 0; i < questions.length; i++) {
+    var answer = prompt(questions[i][0]);
+    if (answer.toUpperCase() == questions[i][1]) {
+        alert("Correct! " + questions[i][2]);
+        correctAnswers++;
+    }
+    else {
+        alert("incorrect, the correct answer was " + questions[i][1]);
+    }
+}
+alert("You got " +correctAnswers);
+</Script>
+ 
+

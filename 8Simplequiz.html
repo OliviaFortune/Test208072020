@@ -1,0 +1,46 @@
+<html>
+<body>
+<p id="demo"></p>
+  Pick A,B,C or D:
+    <input type="radio" name="Question1" value="A">A
+    <input type="radio" name="Question1" value="B">B
+    <input type="radio" name="Question1" value="C">C
+    <input type="radio" name="Question1" value="D">D
+
+<p id="demo1"></p>
+  Pick A,B,C or D:
+    <input type="radio" name="Question2" value="A">A
+    <input type="radio" name="Question2" value="B">B
+    <input type="radio" name="Question2" value="C">C
+    <input type="radio" name="Question2" value="D">D
+<p id="demo2"></p>
+  Pick A,B,C or D:
+    <input type="radio" name="Question3" value="A">A
+    <input type="radio" name="Question3" value="B">B
+    <input type="radio" name="Question3" value="C">C
+    <input type="radio" name="Question3" value="D">D
+<p id="demo3"></p>
+  Pick A,B,C or D:
+    <input type="radio" name="Question3" value="A">A
+    <input type="radio" name="Question3" value="B">B
+    <input type="radio" name="Question3" value="C">C
+    <input type="radio" name="Question3" value="D">D
+
+<SCRIPT>
+var questions = [
+["What is the capital of England?"],
+["What is the capital of France?"],
+["What is the capital of Canada?"],
+["What is the capital of Ireland?"]
+];
+
+
+
+document.getElementById("demo").innerHTML =  questions[0];
+document.getElementById("demo1").innerHTML =  questions[1];
+document.getElementById("demo2").innerHTML =  questions[2];
+document.getElementById("demo3").innerHTML =  questions[3];
+</SCRIPT>
+</body>
+</html>
+

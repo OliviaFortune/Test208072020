@@ -1,0 +1,31 @@
+  <body>
+  <div>
+  <p>Question 1 : Who was the first man on the Moon</p>
+      <button id="btn1">Neil Armstrong</button>
+      <button id="btn2">Buzz Aldrin</button>
+      <button id="btn3">Jim Lovell</button>
+      <button id="btn4">None of these</button>
+    </div>
+ <div id="container">Click a button!</div>
+
+  </body>
+<script>
+  var btn1 = document.getElementById("btn1"),
+      btn2 = document.getElementById("btn2"),
+      btn3 = document.getElementById("btn3"),
+      btn4 = document.getElementById("btn4"),
+      container = document.getElementById("container");
+      
+      var content1 = "You said Neil Armstrong"+" That is correct",
+      content2 = "You Said Buzz Aldrin"+" No the Second Guy",
+      content3 = "You said Jim Lovell"+" No the Appollo 13 guy";
+      content4 = "You said None"+" No,it is one of these guys";
+      
+      
+  btn1.addEventListener("click", () => container.innerHTML = content1);
+    btn2.addEventListener("click", () => container.innerHTML = content2);
+    btn3.addEventListener("click", () => container.innerHTML = content3);
+    btn4.addEventListener("click", () => container.innerHTML = content4);
+</script>
+
+
